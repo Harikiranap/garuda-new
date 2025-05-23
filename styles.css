@@ -119,15 +119,22 @@ body {
     display: none;
     flex-direction: column;
     background-color: #1b1d38;
-    position: absolute;
-    top: 114px;
-    height: auto;
+    position: fixed; /* ✅ Fixed instead of absolute */
+    top: 160px;
     right: 0;
     width: 100%;
-    text-align: right;
+    height: calc(100vh - 114px); /* ✅ Fill remaining space */
+    overflow-y: auto; /* ✅ Enable scrolling within nav */
+    z-index: 999;
     padding: 25px;
-    z-index: 999; 
+  }
 
+  .nav-links::-webkit-scrollbar {
+    display: none; /* ✅ Chrome, Safari */
+  }
+
+  .announcement-text{
+    display: none;
   }
 
   .nav-links.active {
@@ -156,6 +163,12 @@ body {
     display: flex;
   }
 }
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 
 .main {
   overflow: hidden;

@@ -4,6 +4,11 @@ function toggleMenu() {
 
   navLinks.classList.toggle("active");
 
+if (navLinks.classList.contains("active")) {
+  document.body.classList.add("no-scroll");
+} else {
+  document.body.classList.remove("no-scroll");
+}
 
 }
 
