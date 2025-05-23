@@ -119,18 +119,18 @@ body {
     display: none;
     flex-direction: column;
     background-color: #1b1d38;
-    position: fixed; /* ✅ Fixed instead of absolute */
+    position: fixed; 
     top: 160px;
     right: 0;
     width: 100%;
-    height: calc(100vh - 114px); /* ✅ Fill remaining space */
-    overflow-y: auto; /* ✅ Enable scrolling within nav */
+    height: calc(100vh - 114px); 
+    overflow-y: auto; 
     z-index: 999;
     padding: 25px;
   }
 
   .nav-links::-webkit-scrollbar {
-    display: none; /* ✅ Chrome, Safari */
+    display: none; 
   }
 
   .announcement-text{
@@ -146,7 +146,7 @@ body {
   }
 
   .dropdown-content {
-    position: static; /* ✅ Let it flow normally */
+    position: relative; 
     display: none;
     background-color: #1b1d38;
     box-shadow: none;
@@ -154,6 +154,9 @@ body {
     padding-left: 10px;
     border: 2px dashed white;
     padding: 10px;
+    top: 15px;
+    right: 0;
+    left: 0;
   }
 
   .dropdown.open .dropdown-content {
@@ -173,7 +176,7 @@ body {
 .main {
   overflow: hidden;
   width: 100%;
-  background-color: #f0f0f0; /* Optional background */
+  background-color: #f0f0f0; 
   padding: 20px 0;
 }
 
@@ -184,11 +187,10 @@ body {
 }
 
 .scrolling-image img {
-  height: 80px; /* Adjust size as needed */
+  height: 80px; 
   padding: 0 30px;
 }
 
-/* Animation keyframes */
 @keyframes scroll-left {
   0% {
     transform: translateX(100%);
@@ -210,7 +212,6 @@ body {
 .image-slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  /*width: 500%; /* 5 images → 100% each */
 }
 
 .image-slider img {
@@ -271,12 +272,11 @@ body {
 .button-container .button-subtext {
   font-size: 12px;
   font-weight: normal;
-  color: #cbd5e1; /* Lighter text color */
+  color: #cbd5e1; 
   margin-top: 4px;
 }
 
 
-/* Responsive tweaks */
 @media (max-width: 600px) {
   .button-container {
     flex-direction: column;
