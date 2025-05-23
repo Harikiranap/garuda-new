@@ -121,19 +121,17 @@ body {
     background-color: #1b1d38;
     position: absolute;
     top: 114px;
-    height: 500px;
+    height: auto;
     right: 0;
     width: 100%;
     text-align: right;
     padding: 25px;
+    z-index: 999; 
+
   }
 
   .nav-links.active {
     display: flex;
-  }
-
-  .nav-links.active .main-section{
-    display: none;
   }
 
   .nav-links li {
@@ -141,9 +139,21 @@ body {
   }
 
   .dropdown-content {
-    position: relative;
-    box-shadow: none;
+    position: static; /* ✅ Let it flow normally */
+    display: none;
     background-color: #1b1d38;
+    box-shadow: none;
+    border: none;
+    padding-left: 10px;
+    border: 2px dashed white;
+    padding: 10px;
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block;
+  }
+  .main-section {
+    display: flex;
   }
 }
 

@@ -1,7 +1,12 @@
 function toggleMenu() {
   const navLinks = document.getElementById("navLinks");
+  const mainSection = document.querySelector(".main-section");
+
   navLinks.classList.toggle("active");
+
+
 }
+
 
 
 function slideTo(index) {
