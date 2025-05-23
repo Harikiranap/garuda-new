@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garuda Hosting</title>
+    <link rel="icon" href="images/logo1.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="announcement-bar">
+        <span>SPECIAL OFFERS !!</span>
+        <span class="announcement-text">
+            MONSOON OFFERS COMING SOON....STAY TUNED !!
+        </span>
+        <a href="#" class="buy-now">📎BUY NOW</a>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/garuda1.png" alt="Logo">
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Minecraft Hosting</a></li>
+            <li><a href="#">SAMP Hosting</a></li>
+            <li><a href="#">VPS Hosting</a></li>
+
+            <!-- Other Hosting Dropdown -->
+            <li class="dropdown">
+                <a href="#">Other Hosting ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Discord Bot Hosting</a></li>
+                    <li><a href="#">Minecraft Performance</a></li>
+                    <li><a href="#">Dedicated Servers</a></li>
+                </ul>
+            </li>
+
+            <!-- Important Dropdown -->
+            <li class="dropdown">
+                <a href="#">Important ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Status Page</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" class="sign-in">SignIN / SignUP</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-section">
+        <div class="content-left">
+            <!-- Your heading and text -->
+        </div>
+
+        <div class="image-slider-container">
+            <div class="image-slider" id="slider">
+                <img src="images/minecraft.jpg" alt="Minecraft Hosting" />
+                <img src="images/samp.jpg" alt="samp Hosting" />
+                <img src="images/dedicated.jpg" alt="Dedicated Hosting" />
+                <img src="images/vps.jpg" alt="VPS Hosting" />
+                <img src="images/discordbot.png" alt="Discord Hosting" />
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button onclick="slideTo(0)">
+            Minecraft Hosting
+            <span class="button-subtext">$0.9 / GB</span>
+        </button>
+        <button onclick="slideTo(1)">
+            Samp Hosting
+            <span class="button-subtext">$1.2 / GB</span>
+        </button>
+        <button onclick="slideTo(2)">
+            Dedicated Hosting
+            <span class="button-subtext">$5 / GB</span>
+        </button>
+        <button onclick="slideTo(3)">
+            VPS Hosting
+            <span class="button-subtext">$3 / GB</span>
+        </button>
+        <button onclick="slideTo(4)">
+            Discord Hosting
+            <span class="button-subtext">$0.5 / GB</span>
+        </button>
+    </div>
+
+
+
+    <section class="about-section">
+        <h2>The features you deserve</h2>
+        <p>These are some of the benefits of being a Garuda Nodes Customer</p>
+
+        <div class="features-grid">
+            <div class="feature-box">
+                <img src="images/icons/ssd1.svg" alt="SSD Icon" />
+                <h3>NVME SSD Storage</h3>
+                <p>All our Servers Come with Fast & Latest Raid 1 NVME SSD Storage Drives.</p>
+            </div>
+
+            <div class="feature-box">
+                <img src="images/icons/ddos.svg" alt="DDoS Icon" />
+                <h3>DDoS Protection</h3>
+                <p>All Garuda Nodes Servers with GB SHIELD DDOS Protection. Keeping your servers up 24/7.</p>
+            </div>
+
+            <div class="feature-box">
+                <img src="images/icons/timer.svg" alt="Instant Icon" />
+                <h3>Instant Setup</h3>
+                <p>Your Ordered Server/Service will be setup in seconds after payment, truly rapid.</p>
+            </div>
+
+            <div class="feature-box">
+                <img src="images/icons/review.svg" alt="Review Icon" />
+                <h3>Highly Reviewed</h3>
+                <p>We are rated 4.7/5, making us one of the best & most trustworthy hosting solutions.</p>
+            </div>
+
+            <div class="feature-box">
+                <img src="images/icons/cpu.svg" alt="CPU Icon" />
+                <h3>Fast Processors</h3>
+                <p>Our Servers are Equipped with High Performance Intel & AMD Processors such as Intel I9/Ryzen9</p>
+            </div>
+
+            <div class="feature-box">
+                <img src="images/icons/support1.svg" alt="Support Icon" />
+                <h3>Fast & Best Support</h3>
+                <p>Garuda Nodes Strives to Ensure Customer Satisfaction by providing them Fast Support 24/7.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Minecraft Hosting</a></li>
+                    <li><a href="#">Game Hosting</a></li>
+                    <li><a href="#">Discord Bot Hosting</a></li>
+                    <li><a href="#">VPS Hosting</a></li>
+                    <li><a href="#">Dedicated Servers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column logo-section">
+                <img src="images/garuda1.png" alt="garuda Logo" />
+                <p>Garuda Cloud is a registered trademark</p>
+                <p>© 2025 Garuda cloud. All Rights Reserved</p>
+
+            </div>
+        </div>
+        <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i><a href="https://harikiranap.netlify.app/"> HARI KIRAN</a></h1>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
